@@ -3,7 +3,7 @@ package com.pogorelov.goitspring;
 
 public class ConsoleEventLogger implements EventLogger {
 
-    public void logEvent(String message){
-        System.out.println(message);
+    public void logEvent(Event event){
+        System.out.println(event.toString());
     }
 }

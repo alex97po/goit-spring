@@ -16,12 +16,12 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         App app = (App) context.getBean("app");
-        app.logEvent("Some event for user 1");
-        app.logEvent("Some event for user 2");
+        app.logEvent(context,"Some event for user 1");
+        app.logEvent(context, "Some event for user 2");
     }
 
-    private void logEvent(String msg) {
-        String message = msg.replaceAll(client.getId().toString(), client.getFullName());
+    private void logEvent(ApplicationContext applicationContext, String msg) {
+        Event message = (Event) applicationContext.getBean("event");
         eventLogger.logEvent(message);
     }
 }
