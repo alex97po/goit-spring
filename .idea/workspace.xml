@@ -20,11 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd956d89-e063-48b3-ab50-fc0395f3dd7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/ConsoleEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/repository/QueryToDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/repository/QueryToDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/EventLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/ConsoleEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/ConsoleEventLogger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bLssOWDrLGvfXaPMge9BTCDDPE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,6 +58,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\11\IdeaProjects\goit-spring\src\main\resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\11\IdeaProjects\goit-student-projects\goit-spring" />
     </key>
@@ -91,6 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588422913095</updated>
       <workItem from="1588422916595" duration="1126000" />
+      <workItem from="1588424098775" duration="1061000" />
     </task>
     <servers />
   </component>
@@ -107,8 +113,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1084" y="417" key="Github.ShareDialog" timestamp="1588424107980">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1084" y="417" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424107980" />
+    <state x="-1168" y="214" key="Github.UntrackedFilesDialog" timestamp="1588424117025">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1168" y="214" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424117025" />
     <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1588424043909">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
