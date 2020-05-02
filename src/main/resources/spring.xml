@@ -10,10 +10,10 @@
         <constructor-arg type="java.lang.Long" value="1"/>
         <constructor-arg value="John Smith"/>
     </bean>
-    <bean id="eventLogger"  class="com.pogorelov.goitspring.ConsoleEventLogger"/>
+    <bean id="consoleEventLogger"  class="com.pogorelov.goitspring.loggers.ConsoleEventLogger"/>
     <bean id="app"    class="com.pogorelov.goitspring.App">
         <constructor-arg ref="client"/>
-        <constructor-arg ref="eventLogger"/>
+        <constructor-arg ref="cacheFileEventLogger"/>
     </bean>
     <bean id="event" class="com.pogorelov.goitspring.Event" scope="prototype">
         <constructor-arg>
@@ -22,6 +22,13 @@
         <constructor-arg>
             <bean class="java.text.DateFormat" factory-method="getDateTimeInstance"/>
         </constructor-arg>
+    </bean>
+    <bean id="fileEventLogger" class="com.pogorelov.goitspring.loggers.FileEventLogger" init-method="init">
+        <constructor-arg type="java.lang.String" value="log.txt"/>
+
+    </bean>
+    <bean id="cacheFileEventLogger" class="com.pogorelov.goitspring.loggers.CacheFileEventLogger" parent="fileEventLogger" destroy-method="destroy">
+        <constructor-arg type="java.lang.Integer" value="3"/>
     </bean>
 
 </beans>

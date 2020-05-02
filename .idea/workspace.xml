@@ -19,11 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd956d89-e063-48b3-ab50-fc0395f3dd7c" name="Default Changelist" comment="Step 2. spring.xml + ApplicationContext">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/Event.java" afterDir="false" />
+    <list default="true" id="bd956d89-e063-48b3-ab50-fc0395f3dd7c" name="Default Changelist" comment="Step 3. Bean scope + inner  bean">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CacheFileEventLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/FileEventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/ConsoleEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/ConsoleEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/EventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/EventLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/ConsoleEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/ConsoleEventLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/EventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/EventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -69,7 +74,7 @@
       <module name="goit-spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.pogorelov.goitspring.*" />
+          <option name="PATTERN" value="com.pogorelov.goitspring.loggers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,7 +99,8 @@
       <option name="presentableId" value="Default" />
       <updated>1588422913095</updated>
       <workItem from="1588422916595" duration="1126000" />
-      <workItem from="1588424098775" duration="2038000" />
+      <workItem from="1588424098775" duration="6583000" />
+      <workItem from="1588430708287" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="Step 2. spring.xml + ApplicationContext">
       <created>1588425397002</created>
@@ -103,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588425397002</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Step 3. Bean scope + inner  bean">
+      <created>1588426374740</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1588426374740</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,13 +136,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Step 2. spring.xml + ApplicationContext" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 2. spring.xml + ApplicationContext" />
+    <MESSAGE value="Step 3. Bean scope + inner  bean" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 3. Bean scope + inner  bean" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1192" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1588426030884">
+    <state x="-1192" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1588426423403">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1192" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588426030884" />
+    <state x="-1192" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588426423403" />
+    <state x="-1177" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588430657343">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1177" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430657343" />
     <state x="-1084" y="417" key="Github.ShareDialog" timestamp="1588424107980">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -138,25 +156,45 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1168" y="214" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424117025" />
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1588424043909">
+    <state width="1860" height="344" key="GridCell.Tab.0.bottom" timestamp="1588430695798">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424043909" />
-    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1588424043908">
+    <state width="1860" height="344" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
+    <state width="1860" height="344" key="GridCell.Tab.0.center" timestamp="1588430695797">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424043908" />
-    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1588424043908">
+    <state width="1860" height="344" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695797" />
+    <state width="1860" height="344" key="GridCell.Tab.0.left" timestamp="1588430695797">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424043908" />
-    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1588424043908">
+    <state width="1860" height="344" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695797" />
+    <state width="1860" height="344" key="GridCell.Tab.0.right" timestamp="1588430695798">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424043908" />
+    <state width="1860" height="344" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom" timestamp="1588430695798">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
+    <state width="1860" height="344" key="GridCell.Tab.1.center" timestamp="1588430695798">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
+    <state width="1860" height="344" key="GridCell.Tab.1.left" timestamp="1588430695798">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
+    <state width="1860" height="344" key="GridCell.Tab.1.right" timestamp="1588430695798">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588425402930">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588425402930" />
+    <state x="-1280" y="202" key="spring file set editor" timestamp="1588430755095">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1280" y="202" key="spring file set editor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430755095" />
   </component>
 </project>

@@ -1,5 +1,7 @@
-package com.pogorelov.goitspring;
+package com.pogorelov.goitspring.loggers;
 
+
+import com.pogorelov.goitspring.Event;
 
 public class ConsoleEventLogger implements EventLogger {
 
