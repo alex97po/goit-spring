@@ -20,17 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd956d89-e063-48b3-ab50-fc0395f3dd7c" name="Default Changelist" comment="Step 5. Import context">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/EventType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CombinedEventLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/config/CollectionConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Event.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CacheFileEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CacheFileEventLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CombinedEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CombinedEventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/ConsoleEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/ConsoleEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/EventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/EventLogger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/FileEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/FileEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/loggers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/loggers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/client.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/client.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/loggers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/other.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
@@ -65,11 +67,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\11\IdeaProjects\goit-spring\src\main\resources" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\11\IdeaProjects\goit-student-projects\goit-spring" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\11\IdeaProjects\goit-spring\src\main\resources" />
     </key>
   </component>
   <component name="RunManager">
@@ -164,10 +166,18 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1192" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588503573787" />
-    <state x="-1177" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588430657343">
+    <state x="-1177" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588507967161">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1177" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430657343" />
+    <state x="-1177" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588507967161" />
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588510142221">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588510142221" />
+    <state x="-1820" y="100" width="1720" height="840" key="DiffContextDialog" timestamp="1588510406705">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1820" y="100" width="1720" height="840" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588510406705" />
     <state x="-1084" y="417" key="Github.ShareDialog" timestamp="1588424107980">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -176,38 +186,38 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1168" y="214" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424117025" />
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1588504522489">
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1588511328800">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588504522489" />
-    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1588504522489">
+    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511328800" />
+    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1588511328800">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588504522489" />
-    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1588504522489">
+    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511328800" />
+    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1588511328800">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588504522489" />
-    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1588504522489">
+    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511328800" />
+    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1588511328800">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588504522489" />
-    <state width="1860" height="344" key="GridCell.Tab.1.bottom" timestamp="1588430695798">
+    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511328800" />
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom" timestamp="1588509634268">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
-    <state width="1860" height="344" key="GridCell.Tab.1.center" timestamp="1588430695798">
+    <state width="1860" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588509634268" />
+    <state width="1860" height="344" key="GridCell.Tab.1.center" timestamp="1588509634268">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
-    <state width="1860" height="344" key="GridCell.Tab.1.left" timestamp="1588430695798">
+    <state width="1860" height="344" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588509634268" />
+    <state width="1860" height="344" key="GridCell.Tab.1.left" timestamp="1588509634268">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
-    <state width="1860" height="344" key="GridCell.Tab.1.right" timestamp="1588430695798">
+    <state width="1860" height="344" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588509634268" />
+    <state width="1860" height="344" key="GridCell.Tab.1.right" timestamp="1588509634268">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430695798" />
+    <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588509634268" />
     <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588503203719">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -216,5 +226,26 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1280" y="202" key="spring file set editor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430755095" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CombinedEventLogger.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CombinedEventLogger.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/FileEventLogger.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

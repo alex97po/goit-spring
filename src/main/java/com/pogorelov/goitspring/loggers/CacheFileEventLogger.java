@@ -1,20 +1,22 @@
 package com.pogorelov.goitspring.loggers;
 
 import com.pogorelov.goitspring.domain.Event;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CacheFileEventLogger extends FileEventLogger {
 
-    private final Integer cacheSize;
-    private final List<Event> cache;
+    @Value("${cacheSize}")
+    private Integer cacheSize;
 
-    CacheFileEventLogger(String fileName, Integer cacheSize) {
-        super(fileName);
-        this.cacheSize = cacheSize;
-        this.cache = new ArrayList<>(cacheSize);
-    }
+    private final List<Event> cache = new ArrayList<>();
 
+    @PreDestroy
     public void destroy() {
         if (!cache.isEmpty()) {
             writeEventsFromCache();
