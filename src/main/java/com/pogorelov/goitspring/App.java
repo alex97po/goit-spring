@@ -25,6 +25,7 @@ public class App {
 
     private void logEvent(ApplicationContext applicationContext, String msg) {
         Event message = (Event) applicationContext.getBean("event");
+        message.setMessage(msg);
         eventLogger.logEvent(message);
     }
 }
