@@ -1,4 +1,4 @@
-package com.pogorelov.goitspring;
+package com.pogorelov.goitspring.domain;
 
 import lombok.Data;
 

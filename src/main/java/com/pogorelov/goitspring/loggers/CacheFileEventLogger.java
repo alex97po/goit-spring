@@ -1,6 +1,6 @@
 package com.pogorelov.goitspring.loggers;
 
-import com.pogorelov.goitspring.Event;
+import com.pogorelov.goitspring.domain.Event;
 import java.util.ArrayList;
 import java.util.List;
 

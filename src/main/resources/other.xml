@@ -5,12 +5,13 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="client"    class="com.pogorelov.goitspring.Client">
+    <bean id="client"    class="com.pogorelov.goitspring.domain.Client">
         <constructor-arg type="java.lang.Long" value="1"/>
         <constructor-arg value="John Smith"/>
+        <property name="greeting" value="Hello there!"/>
     </bean>
 
-    <bean id="event" class="com.pogorelov.goitspring.Event" scope="prototype">
+    <bean id="event" class="com.pogorelov.goitspring.domain.Event" scope="prototype">
         <constructor-arg>
             <bean class="java.util.Date"/>
         </constructor-arg>

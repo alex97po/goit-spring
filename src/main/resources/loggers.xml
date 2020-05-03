@@ -13,5 +13,14 @@
         <constructor-arg type="java.lang.Integer" value="3"/>
     </bean>
 
+    <bean id="combinedEventLogger" class="com.pogorelov.goitspring.loggers.CombinedEventLogger" parent="fileEventLogger">
+        <constructor-arg>
+            <list>
+                <ref bean="consoleEventLogger"/>
+                <ref bean="fileEventLogger"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
     <bean id="consoleEventLogger"  class="com.pogorelov.goitspring.loggers.ConsoleEventLogger"/>
 </beans>
