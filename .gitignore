@@ -1,2 +1,9 @@
 # Project exclude paths
 /target/
+.idea
+*.iws
+*.iml
+*.ipr
+*.target
+.DS_STORE
+/src/main/resources/log
