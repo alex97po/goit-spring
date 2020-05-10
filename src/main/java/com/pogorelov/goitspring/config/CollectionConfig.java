@@ -7,10 +7,7 @@ import com.pogorelov.goitspring.loggers.ConsoleEventLogger;
 import com.pogorelov.goitspring.loggers.EventLogger;
 import com.pogorelov.goitspring.loggers.FileEventLogger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 
 import java.util.List;
 import java.util.Map;
@@ -18,6 +15,7 @@ import java.util.Map;
 @Configuration
 @ComponentScan("com.pogorelov.goitspring")
 @PropertySource("classpath:client.properties")
+@EnableAspectJAutoProxy(proxyTargetClass = true)
 public class CollectionConfig {
 
     @Autowired

@@ -3,6 +3,7 @@ package com.pogorelov.goitspring.config;
 import com.pogorelov.goitspring.domain.Event;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Scope;
 
 import java.text.DateFormat;

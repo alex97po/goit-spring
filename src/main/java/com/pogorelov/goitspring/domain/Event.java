@@ -2,7 +2,11 @@ package com.pogorelov.goitspring.domain;
 
 import lombok.Data;
 
+import javax.sound.midi.MidiFileFormat;
 import java.text.DateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
 
 @Data
@@ -19,6 +23,11 @@ public class Event {
     public Event(Date date, DateFormat dateFormat) {
         this.date = date;
         this.dateFormat = dateFormat;
+    }
+
+    public static boolean isDay() {
+        return LocalDateTime.now().isAfter(LocalDateTime.of(LocalDate.now(), LocalTime.of(8, 0)))
+                && LocalDateTime.now().isBefore(LocalDateTime.of(LocalDate.now(), LocalTime.of(17, 0)));
     }
 
 

@@ -19,22 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd956d89-e063-48b3-ab50-fc0395f3dd7c" name="Default Changelist" comment="Step 5. Import context">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/config/CollectionConfig.java" afterDir="false" />
+    <list default="true" id="bd956d89-e063-48b3-ab50-fc0395f3dd7c" name="Default Changelist" comment="Step 8. Replace xml with annotation">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/aspect/LoggingAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/config/CollectionConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/config/CollectionConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/domain/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CacheFileEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CacheFileEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CombinedEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/CombinedEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/ConsoleEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/ConsoleEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/FileEventLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/FileEventLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/client.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/client.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/loggers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +57,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -107,6 +102,19 @@
       <workItem from="1588422916595" duration="1126000" />
       <workItem from="1588424098775" duration="6583000" />
       <workItem from="1588430708287" duration="4245000" />
+      <workItem from="1588512825447" duration="7318000" />
+      <workItem from="1588521322545" duration="132000" />
+      <workItem from="1588521466979" duration="880000" />
+      <workItem from="1588522359730" duration="167000" />
+      <workItem from="1588522538566" duration="3491000" />
+      <workItem from="1588576468653" duration="22000" />
+      <workItem from="1588676274961" duration="619000" />
+      <workItem from="1588696984737" duration="1842000" />
+      <workItem from="1588782594221" duration="603000" />
+      <workItem from="1588784197802" duration="599000" />
+      <workItem from="1588785989357" duration="598000" />
+      <workItem from="1588833342892" duration="217000" />
+      <workItem from="1589114960404" duration="5667000" />
     </task>
     <task id="LOCAL-00001" summary="Step 2. spring.xml + ApplicationContext">
       <created>1588425397002</created>
@@ -136,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588503199525</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Step 8. Replace xml with annotation">
+      <created>1588511730314</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588511730314</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,9 +174,18 @@
     <MESSAGE value="Step 3. Bean scope + inner  bean" />
     <MESSAGE value="Step 4. Init + destroy methods" />
     <MESSAGE value="Step 5. Import context" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 5. Import context" />
+    <MESSAGE value="Step 8. Replace xml with annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 8. Replace xml with annotation" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1480" y="94" key="#Project_Structure" timestamp="1588530436814">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1480" y="94" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588530436814" />
+    <state x="-1506" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588531037661">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1506" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588531037661" />
     <state x="-1192" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1588503573787">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -170,10 +194,10 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1177" y="388" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588507967161" />
-    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588510142221">
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588511696144">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588510142221" />
+    <state x="-1230" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511696144" />
     <state x="-1820" y="100" width="1720" height="840" key="DiffContextDialog" timestamp="1588510406705">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -186,46 +210,54 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1168" y="214" key="Github.UntrackedFilesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588424117025" />
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom" timestamp="1588511328800">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1589122503083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588534658743" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589122503083" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1589122503083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588534658743" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589122503083" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1589122503083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588534658743" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589122503083" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1589122503083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588534658743" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589122503083" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1589121445563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588534658739" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589121445563" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1589121445563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588534658739" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589121445563" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1589121445563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588534658739" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589121445563" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1589121445563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588534658739" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1589121445563" />
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588511735495">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511328800" />
-    <state width="1860" height="279" key="GridCell.Tab.0.center" timestamp="1588511328800">
+    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511735495" />
+    <state x="-1280" y="202" key="spring file set editor" timestamp="1588530423325">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511328800" />
-    <state width="1860" height="279" key="GridCell.Tab.0.left" timestamp="1588511328800">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511328800" />
-    <state width="1860" height="279" key="GridCell.Tab.0.right" timestamp="1588511328800">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1860" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588511328800" />
-    <state width="1860" height="344" key="GridCell.Tab.1.bottom" timestamp="1588509634268">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588509634268" />
-    <state width="1860" height="344" key="GridCell.Tab.1.center" timestamp="1588509634268">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588509634268" />
-    <state width="1860" height="344" key="GridCell.Tab.1.left" timestamp="1588509634268">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588509634268" />
-    <state width="1860" height="344" key="GridCell.Tab.1.right" timestamp="1588509634268">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588509634268" />
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588503203719">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1368" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588503203719" />
-    <state x="-1280" y="202" key="spring file set editor" timestamp="1588430755095">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1280" y="202" key="spring file set editor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588430755095" />
+    <state x="-1280" y="202" key="spring file set editor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588530423325" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -244,6 +276,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/loggers/FileEventLogger.java</url>
           <line>33</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/pogorelov/goitspring/App.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -7,12 +7,9 @@ import com.pogorelov.goitspring.domain.Event;
 import com.pogorelov.goitspring.domain.EventType;
 import com.pogorelov.goitspring.loggers.EventLogger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.*;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -27,8 +24,7 @@ public class App {
     @Autowired
     private Client client;
 
-    @Autowired
-    @Qualifier("fileEventLogger")
+    @Value("#{T(com.pogorelov.goitspring.domain.Event).isDay() ? fileEventLogger : consoleEventLogger}")
     private EventLogger defaultLogger;
 
     @Autowired
@@ -38,13 +34,13 @@ public class App {
         ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(CollectionConfig.class, AppConfig.class);
         App app = (App) context.getBean("app");
         List<Event> events = Stream.generate(() -> (Event) context.getBean("event")).limit(3).collect(Collectors.toList());
-        app.logEvent(EventType.ERROR, events.get(0), "Some event for user 1");
-        app.logEvent(EventType.INFO, events.get(1), "Some event for user 2");
-        app.logEvent(null, events.get(2), "Some event for user 3");
+        app.appLogEvent(EventType.ERROR, events.get(0), "Some event for user 1");
+        app.appLogEvent(EventType.INFO, events.get(1), "Some event for user 2");
+        app.appLogEvent(null, events.get(2), "Some event for user 3");
         context.close();
     }
 
-    private void logEvent(EventType type, Event event, String msg) {
+    private void appLogEvent(EventType type, Event event, String msg) {
         String message = msg.replaceAll(client.getId().toString(), client.getFullName());
         event.setMessage(message);
 
